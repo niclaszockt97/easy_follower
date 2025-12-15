@@ -1,7 +1,12 @@
-const clientId = 'uo22ewr0pq7qvclkawljj0md7obcpw';
-const accessToken = 'aemz706aihp12oc4tipcupv77za64r';
-const username = 'der_niclas_97';
+let clientId, accessToken, username;
 
+async function loadConfig() {
+    const response = await fetch('config.json');
+    const config = await response.json();
+    clientId = config.clientId;
+    accessToken = config.accessToken;
+    username = config.username;
+}
 async function getUserId(username, clientId, accessToken) {
     const response = await fetch(`https://api.twitch.tv/helix/users?login=${username}`, {
         headers: {
@@ -85,6 +90,7 @@ function renderChannelsList(channels) {
 }
 
 async function main() {
+    await loadConfig();
     const userId = await getUserId(username, clientId, accessToken);
     if (!userId) {
         console.error("User-ID konnte nicht gefunden werden.");
