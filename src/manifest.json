@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Easy Follower",
+    "version": "1.0.0",
+    "description": "Zeigt deine gefolgten, gerade live gehenden Twitch-Kanäle.",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "resources/img/twitch_logo.png",
+        "48": "resources/img/twitch_logo.png",
+        "128": "resources/img/twitch_logo.png"
+      }
+    },
+    "permissions": [],
+    "host_permissions": [
+      "https://api.twitch.tv/*",
+      "https://id.twitch.tv/*"
+    ]
+  }
