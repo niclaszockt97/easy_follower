@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Zeigt deine gefolgten, gerade live gehenden Twitch-Kanäle.",
     "action": {
-      "default_popup": "index.html",
+      "default_popup": "src/index.html",
       "default_icon": {
         "16": "src/resources/img/twitch_logo.png",
         "48": "src/resources/img/twitch_logo.png",
