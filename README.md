@@ -70,8 +70,6 @@ Example:
 
 3. Copy the access_token value (everything after access_token= up to the next &).
 
-> Note: This is a user access token. For production use, you should not ship static tokens inside a public extension.
-
 ---
 
 ### 4. Configure the Extension (config.json)
