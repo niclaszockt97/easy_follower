@@ -6,9 +6,9 @@
     "action": {
       "default_popup": "index.html",
       "default_icon": {
-        "16": "resources/img/twitch_logo.png",
-        "48": "resources/img/twitch_logo.png",
-        "128": "resources/img/twitch_logo.png"
+        "16": "src/resources/img/twitch_logo.png",
+        "48": "src/resources/img/twitch_logo.png",
+        "128": "src/resources/img/twitch_logo.png"
       }
     },
     "permissions": [],
