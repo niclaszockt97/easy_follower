@@ -2,8 +2,10 @@ body {
     background-color: #18181b;
     color: #222;
     transition: background 0.3s, color 0.3s;
+    text-align: center;
+    min-width: 750px;
   }
-  
+
   .button {
     margin-left: 12px;
     padding: 5px 12px;
@@ -52,11 +54,18 @@ body {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   }
 
+  #box {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    gap: 8px;                
+    min-width: 1000 px;
+  }
   #channels-list {
     list-style: none;
     padding: 0;
     margin: 1em 0 0 0;
-    max-height: 400px;
+    max-height: 900px;
     overflow-y: auto;
   }
   
